@@ -13,6 +13,18 @@
 		A68F109F25DE6873005E513B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F109D25DE6873005E513B /* Main.storyboard */; };
 		A68F10A125DE6876005E513B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68F10A025DE6876005E513B /* Assets.xcassets */; };
 		A68F10A425DE6876005E513B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A68F10A225DE6876005E513B /* LaunchScreen.storyboard */; };
+		A68F10B525DE72EF005E513B /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10B325DE72EF005E513B /* CoursesTableViewCell.swift */; };
+		A68F10B625DE72EF005E513B /* CoursesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F10B425DE72EF005E513B /* CoursesTableViewCell.xib */; };
+		A68F10BA25DE7D3E005E513B /* CoursesDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10B825DE7D3E005E513B /* CoursesDetailsTableViewCell.swift */; };
+		A68F10BB25DE7D3E005E513B /* CoursesDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68F10B925DE7D3E005E513B /* CoursesDetailsTableViewCell.xib */; };
+		A68F10BE25DE7E3F005E513B /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10BD25DE7E3F005E513B /* CoursesViewController.swift */; };
+		A68F10C525DE982D005E513B /* HexColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10BF25DE982D005E513B /* HexColorExtension.swift */; };
+		A68F10C625DE982D005E513B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10C025DE982D005E513B /* String.swift */; };
+		A68F10C725DE982D005E513B /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10C125DE982D005E513B /* UITabBarExtension.swift */; };
+		A68F10C825DE982D005E513B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10C225DE982D005E513B /* UIViewControllerExtension.swift */; };
+		A68F10C925DE982D005E513B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10C325DE982D005E513B /* UIViewExtension.swift */; };
+		A68F10CA25DE982D005E513B /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10C425DE982D005E513B /* UINavigationBarExtension.swift */; };
+		A68F10CC25DE99EB005E513B /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10CB25DE99EB005E513B /* CourseDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		A68F10A025DE6876005E513B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68F10A325DE6876005E513B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A68F10A525DE6876005E513B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68F10B325DE72EF005E513B /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
+		A68F10B425DE72EF005E513B /* CoursesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesTableViewCell.xib; sourceTree = "<group>"; };
+		A68F10B825DE7D3E005E513B /* CoursesDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		A68F10B925DE7D3E005E513B /* CoursesDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		A68F10BD25DE7E3F005E513B /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		A68F10BF25DE982D005E513B /* HexColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorExtension.swift; sourceTree = "<group>"; };
+		A68F10C025DE982D005E513B /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A68F10C125DE982D005E513B /* UITabBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
+		A68F10C225DE982D005E513B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		A68F10C325DE982D005E513B /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A68F10C425DE982D005E513B /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
+		A68F10CB25DE99EB005E513B /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,107 @@
 		A68F109625DE6873005E513B /* Shorfa */ = {
 			isa = PBXGroup;
 			children = (
+				A68F10AE25DE689C005E513B /* SupportFiles */,
+				A68F10AD25DE6892005E513B /* Storyboard */,
+				A68F10AC25DE688A005E513B /* Utlis */,
+				A68F10AB25DE687F005E513B /* ViewController */,
 				A68F109725DE6873005E513B /* AppDelegate.swift */,
 				A68F109925DE6873005E513B /* SceneDelegate.swift */,
-				A68F109B25DE6873005E513B /* ViewController.swift */,
-				A68F109D25DE6873005E513B /* Main.storyboard */,
-				A68F10A025DE6876005E513B /* Assets.xcassets */,
-				A68F10A225DE6876005E513B /* LaunchScreen.storyboard */,
 				A68F10A525DE6876005E513B /* Info.plist */,
 			);
 			path = Shorfa;
+			sourceTree = "<group>";
+		};
+		A68F10AB25DE687F005E513B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10BC25DE7DFC005E513B /* Courses */,
+				A68F10B025DE72AA005E513B /* XIB */,
+				A68F10CB25DE99EB005E513B /* CourseDetailsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A68F10AC25DE688A005E513B /* Utlis */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10BF25DE982D005E513B /* HexColorExtension.swift */,
+				A68F10C025DE982D005E513B /* String.swift */,
+				A68F10C425DE982D005E513B /* UINavigationBarExtension.swift */,
+				A68F10C125DE982D005E513B /* UITabBarExtension.swift */,
+				A68F10C225DE982D005E513B /* UIViewControllerExtension.swift */,
+				A68F10C325DE982D005E513B /* UIViewExtension.swift */,
+				A68F109B25DE6873005E513B /* ViewController.swift */,
+			);
+			path = Utlis;
+			sourceTree = "<group>";
+		};
+		A68F10AD25DE6892005E513B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A68F109D25DE6873005E513B /* Main.storyboard */,
+				A68F10A225DE6876005E513B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A68F10AE25DE689C005E513B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10AF25DE68C0005E513B /* Font */,
+				A68F10A025DE6876005E513B /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		A68F10AF25DE68C0005E513B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A68F10B025DE72AA005E513B /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10B125DE72B7005E513B /* TableView */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		A68F10B125DE72B7005E513B /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10B725DE7D1A005E513B /* CoursesDetails */,
+				A68F10B225DE72C2005E513B /* Courses */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		A68F10B225DE72C2005E513B /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10B325DE72EF005E513B /* CoursesTableViewCell.swift */,
+				A68F10B425DE72EF005E513B /* CoursesTableViewCell.xib */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		A68F10B725DE7D1A005E513B /* CoursesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10B825DE7D3E005E513B /* CoursesDetailsTableViewCell.swift */,
+				A68F10B925DE7D3E005E513B /* CoursesDetailsTableViewCell.xib */,
+			);
+			path = CoursesDetails;
+			sourceTree = "<group>";
+		};
+		A68F10BC25DE7DFC005E513B /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				A68F10BD25DE7E3F005E513B /* CoursesViewController.swift */,
+			);
+			path = Courses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68F10B625DE72EF005E513B /* CoursesTableViewCell.xib in Resources */,
+				A68F10BB25DE7D3E005E513B /* CoursesDetailsTableViewCell.xib in Resources */,
 				A68F10A425DE6876005E513B /* LaunchScreen.storyboard in Resources */,
 				A68F10A125DE6876005E513B /* Assets.xcassets in Resources */,
 				A68F109F25DE6873005E513B /* Main.storyboard in Resources */,
@@ -138,9 +256,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68F10B525DE72EF005E513B /* CoursesTableViewCell.swift in Sources */,
 				A68F109C25DE6873005E513B /* ViewController.swift in Sources */,
+				A68F10CC25DE99EB005E513B /* CourseDetailsViewController.swift in Sources */,
+				A68F10C925DE982D005E513B /* UIViewExtension.swift in Sources */,
+				A68F10C825DE982D005E513B /* UIViewControllerExtension.swift in Sources */,
+				A68F10C525DE982D005E513B /* HexColorExtension.swift in Sources */,
+				A68F10BA25DE7D3E005E513B /* CoursesDetailsTableViewCell.swift in Sources */,
 				A68F109825DE6873005E513B /* AppDelegate.swift in Sources */,
 				A68F109A25DE6873005E513B /* SceneDelegate.swift in Sources */,
+				A68F10C625DE982D005E513B /* String.swift in Sources */,
+				A68F10CA25DE982D005E513B /* UINavigationBarExtension.swift in Sources */,
+				A68F10BE25DE7E3F005E513B /* CoursesViewController.swift in Sources */,
+				A68F10C725DE982D005E513B /* UITabBarExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
