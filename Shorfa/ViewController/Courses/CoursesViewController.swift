@@ -29,7 +29,8 @@ class CoursesViewController: UIViewController {
         }
     }
     
-
+    var tableArr: [Int] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -41,24 +42,27 @@ class CoursesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     @IBAction func btnDiscover(_ sender: Any) {
-    self.type = .tab1
+        self.type = .tab1
     }
     @IBAction func btnShare(_ sender: Any) {
-    self.type = .tab2
+        self.type = .tab2
     }
     @IBAction func btnDevelop(_ sender: Any) {
-    self.type = .tab3
+        self.type = .tab3
     }
 }
+
 extension CoursesViewController {
     func setupView(){
         self.type = .tab1
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.register(UINib(nibName: "CoursesTableViewCell", bundle: nil), forCellReuseIdentifier: "CoursesTableViewCell")
+        tableView.register(UINib(nibName: "PlaceholderTableViewCell", bundle: nil), forCellReuseIdentifier: "PlaceholderTableViewCell")
     }
     func localized(){}
     func setupData(){}
@@ -68,27 +72,28 @@ extension CoursesViewController {
             lblDiscover.textColor = "PrimaryColor".myColor
             lblShare.textColor = "placeholderColor".myColor
             lblDevelop.textColor = "placeholderColor".myColor
-            imgDiscover.isHidden = false
+            imgDiscover.image = "pointTab".image_
             imgDiscover.setImageColor(color: "PrimaryColor".myColor)
-            imgDevelop.isHidden = true
-            imgShare.isHidden = true
+            imgDevelop.image = UIImage()
+            imgShare.image = UIImage()
             
         case .tab2:
             lblDiscover.textColor = "placeholderColor".myColor
             lblShare.textColor = "PrimaryColor".myColor
             lblDevelop.textColor = "placeholderColor".myColor
-            imgShare.isHidden = false
-            imgDiscover.isHidden = true
-            imgDevelop.isHidden = true
+            imgShare.image = "pointTab".image_
+            imgDiscover.image = UIImage()
+            imgDevelop.image = UIImage()
             imgShare.setImageColor(color: "PrimaryColor".myColor)
+            
         case .tab3:
             lblDiscover.textColor = "placeholderColor".myColor
             lblShare.textColor = "placeholderColor".myColor
             lblDevelop.textColor = "PrimaryColor".myColor
-            imgDevelop.isHidden = false
-            imgDiscover.isHidden = true
+            imgDevelop.image = "pointTab".image_
+            imgDiscover.image = UIImage()
             imgDevelop.setImageColor(color: "PrimaryColor".myColor)
-            imgShare.isHidden = true
+            imgShare.image = UIImage()
         }
     }
 }
@@ -96,9 +101,13 @@ extension CoursesViewController {
 
 extension CoursesViewController: UITableViewDelegate, UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            20
+            return tableArr.count == 0 ? 2 : tableArr.count
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            if tableArr.count == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceholderTableViewCell") as! PlaceholderTableViewCell
+                return cell
+            }
             let cell = tableView.dequeueReusableCell(withIdentifier: "CoursesTableViewCell") as! CoursesTableViewCell
             //cell.object = tableArr[indexPath.row]
             //cell.configureCell()
@@ -107,6 +116,11 @@ extension CoursesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
        return 160
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard.mainStoryboard.instantiateViewController(withIdentifier: "CourseDetailsViewController") as! CourseDetailsViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

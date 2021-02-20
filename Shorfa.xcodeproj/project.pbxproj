@@ -25,6 +25,10 @@
 		A68F10C925DE982D005E513B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10C325DE982D005E513B /* UIViewExtension.swift */; };
 		A68F10CA25DE982D005E513B /* UINavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10C425DE982D005E513B /* UINavigationBarExtension.swift */; };
 		A68F10CC25DE99EB005E513B /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68F10CB25DE99EB005E513B /* CourseDetailsViewController.swift */; };
+		A6B40A6125E1781B0068AAC7 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B40A5F25E1781B0068AAC7 /* PlaceholderTableViewCell.swift */; };
+		A6B40A6225E1781B0068AAC7 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B40A6025E1781B0068AAC7 /* PlaceholderTableViewCell.xib */; };
+		A6B40A6425E193560068AAC7 /* DubaiW23-Regular.woff.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B40A6325E193560068AAC7 /* DubaiW23-Regular.woff.ttf */; };
+		A6B40A6625E193610068AAC7 /* DubaiW23-Bold.woff.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6B40A6525E193600068AAC7 /* DubaiW23-Bold.woff.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		A68F10C325DE982D005E513B /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A68F10C425DE982D005E513B /* UINavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtension.swift; sourceTree = "<group>"; };
 		A68F10CB25DE99EB005E513B /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
+		A6B40A5F25E1781B0068AAC7 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
+		A6B40A6025E1781B0068AAC7 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
+		A6B40A6325E193560068AAC7 /* DubaiW23-Regular.woff.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DubaiW23-Regular.woff.ttf"; sourceTree = "<group>"; };
+		A6B40A6525E193600068AAC7 /* DubaiW23-Bold.woff.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DubaiW23-Bold.woff.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,8 @@
 		A68F10AF25DE68C0005E513B /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				A6B40A6325E193560068AAC7 /* DubaiW23-Regular.woff.ttf */,
+				A6B40A6525E193600068AAC7 /* DubaiW23-Bold.woff.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -162,6 +172,8 @@
 			children = (
 				A68F10B325DE72EF005E513B /* CoursesTableViewCell.swift */,
 				A68F10B425DE72EF005E513B /* CoursesTableViewCell.xib */,
+				A6B40A5F25E1781B0068AAC7 /* PlaceholderTableViewCell.swift */,
+				A6B40A6025E1781B0068AAC7 /* PlaceholderTableViewCell.xib */,
 			);
 			path = Courses;
 			sourceTree = "<group>";
@@ -241,9 +253,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B40A6425E193560068AAC7 /* DubaiW23-Regular.woff.ttf in Resources */,
+				A6B40A6625E193610068AAC7 /* DubaiW23-Bold.woff.ttf in Resources */,
 				A68F10B625DE72EF005E513B /* CoursesTableViewCell.xib in Resources */,
 				A68F10BB25DE7D3E005E513B /* CoursesDetailsTableViewCell.xib in Resources */,
 				A68F10A425DE6876005E513B /* LaunchScreen.storyboard in Resources */,
+				A6B40A6225E1781B0068AAC7 /* PlaceholderTableViewCell.xib in Resources */,
 				A68F10A125DE6876005E513B /* Assets.xcassets in Resources */,
 				A68F109F25DE6873005E513B /* Main.storyboard in Resources */,
 			);
@@ -265,6 +280,7 @@
 				A68F10BA25DE7D3E005E513B /* CoursesDetailsTableViewCell.swift in Sources */,
 				A68F109825DE6873005E513B /* AppDelegate.swift in Sources */,
 				A68F109A25DE6873005E513B /* SceneDelegate.swift in Sources */,
+				A6B40A6125E1781B0068AAC7 /* PlaceholderTableViewCell.swift in Sources */,
 				A68F10C625DE982D005E513B /* String.swift in Sources */,
 				A68F10CA25DE982D005E513B /* UINavigationBarExtension.swift in Sources */,
 				A68F10BE25DE7E3F005E513B /* CoursesViewController.swift in Sources */,

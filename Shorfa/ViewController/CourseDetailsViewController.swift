@@ -12,8 +12,7 @@ class CourseDetailsViewController: UIViewController {
     
     @IBOutlet weak var CoursestableView: ContentSizedTableView!
     @IBOutlet weak var detailsTableView: ContentSizedTableView!
-
-    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var bottomView: UIButton!
     
 
     override func viewDidLoad() {
@@ -27,6 +26,7 @@ class CourseDetailsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
 }
 
@@ -62,7 +62,7 @@ extension CourseDetailsViewController {
     func setupView(){
         bottomView.isHidden = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.bottomView.isHidden = true
+            self.bottomView.isHidden = false
             // your code here
         }
         CoursestableView.register(UINib(nibName: "CoursesTableViewCell", bundle: nil), forCellReuseIdentifier: "CoursesTableViewCell")
