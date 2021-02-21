@@ -7,10 +7,14 @@
 		<string>DubaiW23-Bold.woff.ttf</string>
 		<string>DubaiW23-Regular.woff.ttf</string>
 	</array>
+	<key></key>
+	<string></string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
